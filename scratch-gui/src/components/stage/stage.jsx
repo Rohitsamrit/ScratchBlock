@@ -82,6 +82,7 @@ const StageComponent = props => {
                 <Box
                     className={classNames(
                         styles.stageOverlays,
+                        
                         {[styles.fullScreen]: isFullScreen}
                     )}
                 >
@@ -89,7 +90,8 @@ const StageComponent = props => {
                         className={styles.stageBottomWrapper}
                         style={{
                             width: stageDimensions.width,
-                            height: stageDimensions.height
+                            height: stageDimensions.height,
+                            overflow: 'auto'
                         }}
                     >
                         {micIndicator ? (
@@ -110,7 +112,7 @@ const StageComponent = props => {
                             </div>
                         )}
                     </div>
-                    <div id="docx">
+                    <div id="docx" style={{ maxHeight: stageDimensions.height, maxWidth: stageDimensions.width, overflow: 'auto',width: stageDimensions.width, height: stageDimensions.height }}>
                         
                     </div>
                     <canvas
