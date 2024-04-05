@@ -45,8 +45,11 @@ import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
-import docxLargeIcon from './docx/docx_large.jpg';
-import docxSmallIcon from './docx/docx_small.jpg';
+import docxSmallIcon from './docx/icons8-document (1).svg';
+import docxLargeIcon from './docx/docx_large  (1).jpg';
+
+// import docxLargeIcon from './docx/docx_large.jpg';
+// import docxSmallIcon from './docx/docx_small.jpg';
 
 export default [
     {
@@ -321,14 +324,14 @@ export default [
         helpLink: 'https://scratch.mit.edu/vernier'
     },
     {
-        name: 'docx',  
+        name: 'DocBuilder',  
         collaborator:'Team A',
         extensionId: 'docx',
-        iconURL: docxSmallIcon,
-        insetIconURL: docxLargeIcon,
+        iconURL: docxLargeIcon,
+        insetIconURL: docxSmallIcon ,
         description: (
             <FormattedMessage
-                defaultMessage="docx"
+                defaultMessage="Create your own documentation"
                 description="Description for the docx extension"
                 id="gui.extension.docx.description"
             />
